@@ -1,0 +1,1 @@
+This is an example of a responsive registration page which also validates the user input and i have also added search option through the mail, which is stored in the local storage. feel free to customise the page according to ur needs. happy learning!!!
