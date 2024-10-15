@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>HTML5 & Javascript Lab Tutorial</h2>
+        
+        <form id="registrationForm">
+            <section class="form-section">
+                <h3>Personal Details</h3>
+                <div class="input-group-container">
+                    <div class="input-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h3>Login Details</h3>
+                <div class="input-group-container">
+                    <div class="input-group">
+                        <label for="loginEmail">Use Email address below</label>
+                        <input type="email" id="loginEmail" name="loginEmail" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Create your new password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <h3>Additional Details</h3>
+                <div class="input-group-container">
+                    <div class="input-group">
+                        <label for="tenthMarks">10th standard Marks</label>
+                        <input type="number" id="tenthMarks" name="tenthMarks" placeholder="Enter Percentage" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="tenthYear">Year of Passing</label>
+                        <input type="number" id="tenthYear" name="tenthYear" placeholder="2000" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="twelfthMarks">12th standard Marks</label>
+                        <input type="number" id="twelfthMarks" name="twelfthMarks" placeholder="Enter Percentage" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="twelfthYear">Year of Passing</label>
+                        <input type="number" id="twelfthYear" name="twelfthYear" placeholder="2000" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="degreeType">Degree Type</label>
+                        <select id="degreeType" name="degreeType" required>
+                            <option value="Engineering">Engineering</option>
+                            <option value="Science">Science</option>
+                            <option value="Commerce">Commerce</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="degree">Degree</label>
+                        <select id="degree" name="degree" required>
+                            <option value="Bachelors">Bachelors</option>
+                            <option value="Masters">Masters</option>
+                            <option value="PhD">PhD</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for ="semester">Degree Semester</label>
+                        <select id="semester" name="semester" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="regNo">College Registration No</label>
+                        <input type="text" id="regNo" name="regNo" placeholder="Enter Registration No" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="state">State</label>
+                        <select id="state" name="state" required>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Enter Your City" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="motherTongue">Mother Tongue</label>
+                        <input type="text" id="motherTongue" name="motherTongue" placeholder="Hindi" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="guardian">Guardian Name</label>
+                        <input type="text" id="guardian" name="guardian" placeholder="Enter Guardian Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="occupation">Occupation</label>
+                        <input type="text" id="occupation" name="occupation" placeholder="Enter Occupation" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="aspiration">Career Aspiration</label>
+                        <select id="aspiration" name="aspiration" required>
+                            <option value="Artificial Intelligence">Artificial Intelligence</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Software Development">Software Development</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <div class="button-container">
+                <button type="submit" id="submitBtn">Complete Registration and Login</button>
+            </div>
+            <button onclick="handleSearch()">Search User</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
