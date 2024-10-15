@@ -39,18 +39,7 @@ document.getElementById('registrationForm').addEventListener('submit', (event) =
 });
 
 // Function to search for a user by email
-function searchUser(email) {
-    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
-    const foundUser = storedUsers.find(user => user.email === email || user.loginEmail === email);
-    
-    if (foundUser) {
-        console.log('User found:', foundUser);
-        return foundUser;
-    } else {
-        console.log('User not found');
-        return null;
-    }
-}
+const searchUser = email => JSON.parse(localStorage.getItem('users'))?.filter(u => u.email === email || u.loginEmail === email)[0];
 
 // Example usage of the search function (you can call this from a button click or any other event)
 function handleSearch() {
@@ -69,6 +58,3 @@ function handleSearch() {
 document.addEventListener('DOMContentLoaded', () => {
     users = JSON.parse(localStorage.getItem('users')) || [];
 });
-
-// Add a search button to the HTML (you can add this in your HTML file)
-// <button onclick="handleSearch()">Search User</button>
